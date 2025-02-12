@@ -31,14 +31,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/stashenergy/react-native-msal.git"
+    "url": "git+https://github.com/yanivkalfa/react-native-msal-newer-rn.git"
   },
-  "author": "Stash Energy <dev@stash.energy> (https://stash.energy)",
+  "author": "yanivkalfa",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/stashenergy/react-native-msal/issues"
+    "url": "https://github.com/yanivkalfa/react-native-msal-newer-rn/issues"
   },
-  "homepage": "https://github.com/stashenergy/react-native-msal#readme",
+  "homepage": "https://github.com/yanivkalfa/react-native-msal-newer-rn#readme",
   "dependencies": {
     "@azure/msal-browser": "^2.1.0",
     "@expo/config-plugins": "^4.0.6"
