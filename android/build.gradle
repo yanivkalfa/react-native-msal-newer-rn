@@ -16,10 +16,10 @@ def safeExtGet(prop, fallback) {
 }
 
 android {
-  compileSdkVersion safeExtGet('Msal_compileSdkVersion', 29)
+  compileSdkVersion 35 // Updated to match the project compileSdkVersion
   defaultConfig {
-    minSdkVersion safeExtGet('Msal_minSdkVersion', 16)
-    targetSdkVersion safeExtGet('Msal_targetSdkVersion', 29)
+    minSdkVersion 24 // Match the main project's minSdkVersion
+    targetSdkVersion 34 // Match the main project's targetSdkVersion
     versionCode 1
     versionName "1.0"
   }
@@ -33,15 +33,14 @@ android {
     disable 'GradleCompatible'
   }
   compileOptions {
-    sourceCompatibility JavaVersion.VERSION_1_8
-    targetCompatibility JavaVersion.VERSION_1_8
+    sourceCompatibility JavaVersion.VERSION_17 // Align with the JDK version (17)
+    targetCompatibility JavaVersion.VERSION_17
   }
 }
 
 repositories {
   mavenLocal()
   maven {
-    // All of React Native (JS, Obj-C sources, Android binaries) is installed from npm
     url("$rootDir/../node_modules/react-native/android")
   }
   google()
@@ -49,7 +48,6 @@ repositories {
 }
 
 dependencies {
-  // noinspection GradleDynamicVersion
   implementation 'com.facebook.react:react-native:+' // From node_modules
   implementation 'com.microsoft.identity.client:msal:2.2.+'
 }
